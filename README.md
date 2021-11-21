@@ -45,3 +45,13 @@ vue create vue3_demo
 ## 运行项目
 
 npm run serve
+
+## 追加element-UI_2种方法
+
+yarn add element-ui
+
+vue add element(脚手架的插件方式)
+
+## 全局安装webpack
+
+npm install --save-dev webpack
