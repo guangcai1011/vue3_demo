@@ -35,29 +35,29 @@ export default {
       fruits: [
         {
           id: "1",
-          value: "苹果",
+          value: "苹果"
         },
         {
           id: "2",
-          value: "荔枝",
+          value: "荔枝"
         },
         {
           id: "3",
-          value: "香蕉",
+          value: "香蕉"
         },
         {
           id: "4",
-          value: "火龙果",
-        },
+          value: "火龙果"
+        }
       ],
       fruitIds: ["1", "3", "4"],
       // 初始化全选按钮, 默认不选
-      isCheckedAll: false,
+      isCheckedAll: false
     };
   },
   methods: {
     checkedOne(fruitId) {
-      let idIndex = this.fruitIds.indexOf(fruitId);
+      const idIndex = this.fruitIds.indexOf(fruitId);
       if (idIndex >= 0) {
         // 如果已经包含了该id, 则去除(单选按钮由选中变为非选中状态)
         this.fruitIds.splice(idIndex, 1);
@@ -71,16 +71,16 @@ export default {
       if (this.isCheckedAll) {
         // 全选时
         this.fruitIds = [];
-        this.fruits.forEach(function (fruit) {
+        this.fruits.forEach(function(fruit) {
           this.fruitIds.push(fruit.fruitId);
         }, this);
       } else {
         this.fruitIds = [];
       }
     },
-    deleteFruits() {},
-  },
+    deleteFruits() {}
+  }
 };
 </script>
 
-<style lang="sass" scoped></style>
+

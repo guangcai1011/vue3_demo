@@ -14,7 +14,7 @@ export default {
     return {
       firstName: "zhang",
       lastName: "san",
-      fullName: "",
+      fullName: ""
     };
   },
   // computed:{
@@ -28,9 +28,9 @@ export default {
     },
     lastName(val) {
       this.fullName = this.firstName + "-" + val;
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style lang="sass" scoped></style>
+
